@@ -37,7 +37,7 @@ export default function Contact() {
           <div className="CheckBoxArea">
             <input
               type="checkbox"
-              className="checkbox"
+              className="inputcheckbox"
               onChange={checkboxHandler}
             />
             <label htmlFor="agree">

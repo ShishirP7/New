@@ -20,10 +20,11 @@ export default function Blog() {
                 <div className="blog-card-Details-1">
                   <img className="authorImg" alt="imtg" src={blogs.authorImg} />
                   <p>{blogs.author}</p>
-                  <Link style={{textDecoration: 'none'}} to ="/blogs"><div className="readmore">
-                    Read More <IoIosArrowForward />{" "}
-                  </div></Link>
-                  
+                  <Link style={{ textDecoration: "none" }} to="/blogs">
+                    <div className="readmore">
+                      Read More <IoIosArrowForward />{" "}
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import React from "react";
 
 import Nav from "../../Components/Navbar";
-import Profile from "../../Components/Profile"
+import CandidatesList from "../../Components/CandidatesList"
 import Footer from "../../Components/Footer";
 import { BiChevronRight } from "react-icons/bi";
 export default function Candidatelist() {
@@ -22,7 +22,7 @@ export default function Candidatelist() {
           </div>
         </div>
       </div>
-      <Profile/>
+      <CandidatesList/>
       <Footer />
     </div>
   );

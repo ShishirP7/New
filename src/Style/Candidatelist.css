@@ -1,0 +1,65 @@
+.canCards {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    gap: 30px;
+}
+
+.canCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+}
+
+.canCard img {
+    width: 100%;
+}
+
+.CanListContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.canCard-Details {
+    position: relative;
+    padding: 10px 20px;
+    width: 80%;
+    bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.canCard-Details p {
+    font-size: 14px;
+}
+
+.canCard-Details .view {
+    font-size: 14px;
+    color: #4cce5b;
+    cursor: pointer;
+}
+
+.canCard-view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.heart {
+    color: #4cce5b;
+    border: 1px solid silver;
+    padding: 6px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.canCard:hover .canCard-Details {
+    width: 87%;
+}
+
+.timeline {
+    margin-left: 600px;
+}

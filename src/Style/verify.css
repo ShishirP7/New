@@ -1,5 +1,87 @@
-.verifyContainer{
+.verifyContainer {
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.verifyyCard {
+    border: 1px solid silver;
+    width: 60%;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.verify-Col1 {
+    background-image: linear-gradient(90deg, #4cce5b 0%, #38a745 63%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.verifyIcon {
+    color: rgb(31, 114, 31);
+    padding: 20px;
+    font-size: 130px;
+    position: relative;
+    top: 80px;
+    font-weight: normal;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+.verify-Col2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.verify-Col2 span {
+    color: #4cce5b;
+    cursor: pointer;
+}
+
+.verify-Col2 h4 {
+    margin-top: 20px;
+}
+
+.verify-Col2 p {
+    margin: 20px 0;
+}
+
+.verify-Col2 span:hover {
+    color: black;
+}
+
+.btn-verify {
+    align-items: center;
+    display: flex;
+    flex: row;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+
+.btn-verify button {
+    color: white;
+    background-image: linear-gradient(90deg, #4cce5b 0%, #38a745 63%);
+    font-size: 16px;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.btn-verify button:hover {
+    background-image: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
 }

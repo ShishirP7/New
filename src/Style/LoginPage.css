@@ -1,377 +1,411 @@
 .dropdownLogin {
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 20px 40px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.921);
+    width: 30%;
+    height: max-content;
+    position: absolute;
+    left: 43%;
+    top: 101%;
+}
 
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 40px 20px 40px;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.921);
-  width: 30%;
-  height: max-content;
-  position: absolute;
-  left: 43%;
-  top: 101%;
-}
 .dropdownLogin .btnArea {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  gap: 20px;
-  margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    gap: 20px;
+    margin-bottom: 30px;
 }
-.dropdownLogin .btnArea button {
-  width: 48%;
-  height: 50px;
-  background: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
-  border: none;
-  color: white;
-  font-size: 16px;
+
+.dropdownLogin .btnArea .btnsActive {
+    width: 48%;
+    height: 50px;
+    background: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
+    border: none;
+    color: white;
+    font-size: 16px;
 }
+
+.dropdownLogin .btnArea .btnNonActive {
+    width: 48%;
+    height: 50px;
+    background-color: rgb(58, 58, 58);
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.dropdownLogin .btnArea .btnNonActive:hover {
+    width: 48%;
+    height: 50px;
+    background: linear-gradient(90deg, #72c97c 0%, #7deb8a 63%);
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
 .dropdownLogin .inputArea input {
-  width: 100%;
-  height: 30px;
-  outline: none;
-  padding: 10px;
-  position: relative;
-  right: 13px;
-  border: 1px solid rgb(198, 198, 198);
+    width: 100%;
+    height: 30px;
+    outline: none;
+    padding: 10px;
+    position: relative;
+    right: 13px;
+    border: 1px solid rgb(198, 198, 198);
 }
+
 .dropdownLogin .inputArea {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .forgotpww {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  width: 100%;
-  margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
 }
+
 .forgotpww label {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .forgotpww span:hover {
-  color: #c80911;
+    color: #c80911;
 }
+
 .forgotpww span {
-  cursor: pointer;
-  font-weight: bold;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .LoginBtn {
-  text-align: center;
-  color: white;
-  border: none;
-  margin-left: 30px;
-  font-weight: bold;
-  width: 200px;
-  padding: 10px 0;
-  font-size: 16px;
-  background: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
+    text-align: center;
+    color: white;
+    border: none;
+    margin-left: 30px;
+    font-weight: bold;
+    width: 200px;
+    padding: 10px 0;
+    font-size: 16px;
+    background: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
 }
 
 .LoginBtn:hover {
-  background: linear-gradient(90deg, #4cce5b 0%, #38a745 63%);
+    background: linear-gradient(90deg, #4cce5b 0%, #38a745 63%);
 }
+
 .AccountText {
-  font-weight: bold;
-  margin-top: 20px;
+    font-weight: bold;
+    margin-top: 20px;
 }
+
 .AccountText span {
-  cursor: pointer;
-  margin-left: 10px;
-  color: #4cce5b;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #4cce5b;
 }
+
 .AccountText span:hover {
-  color: hsl(127, 100%, 50%);
+    color: hsl(127, 100%, 50%);
 }
 
 .loginwith {
-  position: relative;
-  bottom: 30px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-
-  padding: 5px;
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 5px;
 }
 
 .loginwith .fbLogin {
-  background-color: #005b7f;
-  color: white;
-  padding: 10px;
-  position: relative;
-  border: 1px solid white;
-  transition: 0.2s ease-in;
-  cursor: pointer;
+    background-color: #005b7f;
+    color: white;
+    padding: 10px;
+    position: relative;
+    border: 1px solid white;
+    transition: 0.2s ease-in;
+    cursor: pointer;
 }
-.loginwith .googleLogin {
-  background-color: #c80911;
-  color: white;
-  padding: 10px;
-  position: relative;
-  transition: 0.2s ease-in;
-  cursor: pointer;
 
-  border: 1px solid white;
+.loginwith .googleLogin {
+    background-color: #c80911;
+    color: white;
+    padding: 10px;
+    position: relative;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    border: 1px solid white;
 }
 
 .loginwith .socialIcon {
-  position: relative;
-  top: 3px;
+    position: relative;
+    top: 3px;
 }
 
 .fbLogin:hover {
-  color: #005b7f;
-  background-color: white;
-  border: 1px solid #005b7f;
+    color: #005b7f;
+    background-color: white;
+    border: 1px solid #005b7f;
 }
 
 .googleLogin:hover {
-  color: #c80911;
-  background-color: white;
-  border: 1px solid #c80911;
+    color: #c80911;
+    background-color: white;
+    border: 1px solid #c80911;
 }
 
 .loginPage-Head {
-  background: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
-  min-height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    background: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .loginPage-Head h2 {
-  color: #ffffff;
-  margin-bottom: 15px;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  font-size: 38px;
-  font-weight: bold;
-  margin-top: 50px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 50px;
 }
 
 .loginPage-Head ul {
-  list-style-type: none;
-  display: flex;
-
-  color: white;
-  justify-content: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 19px;
-  align-items: center;
-  text-align: center;
+    list-style-type: none;
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    align-items: center;
+    text-align: center;
 }
+
 #righticon {
-  font-weight: bold;
-  font-size: 20px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .login-Container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
 }
 
 .login-Container div h1 {
-  color: rgb(0, 0, 0);
-
-  font-size: 38px;
-  padding-bottom: 70px;
+    color: rgb(0, 0, 0);
+    font-size: 38px;
+    padding-bottom: 70px;
 }
 
 .login-Area {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid rgb(198, 198, 198);
-  padding: 40px 20px;
-  width: 1200px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(198, 198, 198);
+    padding: 40px 20px;
+    width: 1200px;
 }
+
 .login-AreaD {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid rgb(198, 198, 198);
-  padding: 60px 20px;
-  width: 440px;
-  height: 50px;
-  background-color: red;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(198, 198, 198);
+    padding: 60px 20px;
+    width: 440px;
+    height: 50px;
+    background-color: red;
 }
+
 .login-columnD {
-  display: flex;
-  flex-direction: row;
-  background: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
-  color: white;
-  padding: 45px 35px;
-  width: 50%;
-  height: px;
-  margin-left: 10px;
-  margin-right: 10px;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
+    color: white;
+    padding: 45px 35px;
+    width: 50%;
+    height: px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: space-between;
 }
+
 #login-rowD p {
-  font-size: 10px;
-  margin-bottom: 10px;
-  background-color: red;
+    font-size: 10px;
+    margin-bottom: 10px;
+    background-color: red;
 }
 
 #login-rowD h3 {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .login-column {
-  display: flex;
-  flex-direction: row;
-  background: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
-  color: white;
-  padding: 45px 35px;
-  width: 90%;
-  margin-left: 10px;
-  margin-right: 10px;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
+    color: white;
+    padding: 45px 35px;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: space-between;
 }
+
 #login-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
 #login-row p {
-  font-size: 16px;
-  margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 #login-row h3 {
-  font-size: 21px;
-  cursor: pointer;
+    font-size: 21px;
+    cursor: pointer;
 }
+
 #login-row h3:hover {
-  font-size: 21px;
+    font-size: 21px;
 }
+
 #login-row div {
-  margin-left: 25px;
+    margin-left: 25px;
 }
 
 .login-Area {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid rgb(198, 198, 198);
-  padding: 40px 20px;
-  width: 1200px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(198, 198, 198);
+    padding: 40px 20px;
+    width: 1200px;
 }
+
 .login-InputUName {
-  display: flex;
-
-  margin-top: 40px;
-  flex-direction: column;
-
-  width: 1250px;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    width: 1250px;
 }
+
 .login-InputUName input {
-  width: 100%;
-  height: 40px;
-  margin-top: 20px;
-  border: 0.5008px solid rgb(227, 227, 227);
-  outline: none;
-  padding: 10px 20px;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border: 0.5008px solid rgb(227, 227, 227);
+    outline: none;
+    padding: 10px 20px;
 }
+
 .login-SignIN {
-  margin-top: 50px;
-  align-items: center;
-  text-align: center;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
 }
 
 .forgotpw {
-  color: #4cce5b;
-  font-weight: bold;
+    color: #4cce5b;
+    font-weight: bold;
 }
 
 .login-signup {
-  display: flex;
-  flex-direction: row;
-  margin-top: 15px;
-  font-weight: bold;
-
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    font-weight: bold;
+    width: 100%;
 }
 
 .login-signup p {
-  margin-left: 30px;
-  margin-bottom: 40px;
+    margin-left: 30px;
+    margin-bottom: 40px;
 }
 
 .login-signup span {
-  margin-left: 30px;
-  color: #4cce5b;
-  text-decoration: none;
+    margin-left: 30px;
+    color: #4cce5b;
+    text-decoration: none;
 }
+
 .signinbtn {
-  line-height: 1.5;
-  text-align: center;
-  color: white;
-  border: none;
-  margin-left: 30px;
-  font-weight: bold;
-  width: 300px;
-  height: 60px;
-  font-size: 16px;
-  background: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    border: none;
+    margin-left: 30px;
+    font-weight: bold;
+    width: 300px;
+    height: 60px;
+    font-size: 16px;
+    background: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
 }
 
 .signinbtn:hover {
-  background: linear-gradient(90deg, #4cce5b 0%, #38a745 63%);
+    background: linear-gradient(90deg, #4cce5b 0%, #38a745 63%);
 }
 
 .loginwith {
-  display: flex;
-  flex-direction: row;
-  margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
 }
+
 .loginwith button {
-  line-height: 1.5;
-  text-align: center;
-  color: white;
-  border: none;
-  margin-left: 30px;
-  font-weight: bold;
-  width: 620px;
-  height: 80px;
-  font-size: 16px;
-  padding: 0px 0;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    border: none;
+    margin-left: 30px;
+    font-weight: bold;
+    width: 620px;
+    height: 80px;
+    font-size: 16px;
+    padding: 0px 0;
 }
 
 .fbbtn {
-  background-color: #005b7f;
-  transition: 0.2s ease-in;
+    background-color: #005b7f;
+    transition: 0.2s ease-in;
 }
+
 .fbbtn:hover {
-  color: #005b7f;
-  background-color: white;
-  border: 1px solid #005b7f;
+    color: #005b7f;
+    background-color: white;
+    border: 1px solid #005b7f;
 }
+
 .googlebtn {
-  background-color: #c80911;
-  transition: 0.2s ease-in;
+    background-color: #c80911;
+    transition: 0.2s ease-in;
 }
+
 .googlebtn:hover {
-  color: #c80911;
-  background-color: white;
-  border: 1px solid #c80911;
+    color: #c80911;
+    background-color: white;
+    border: 1px solid #c80911;
 }
 
 .login-column p {
-  cursor: pointer;
+    cursor: pointer;
 }

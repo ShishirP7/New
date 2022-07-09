@@ -148,7 +148,9 @@ export default function Nav() {
               </div>
               <span>Forgot Password?</span>
             </div>
-            <button className="LoginBtn">Login</button>
+            <Link style={{ textDecoration: "none" }} to="/EmailVerification ">
+              <button className="LoginBtn">Login</button>
+            </Link>
 
             <p className="AccountText">
               Dont have an Account ?{" "}
@@ -177,7 +179,9 @@ export default function Nav() {
               </div>
               <span>Forgot Password?</span>
             </div>
-            <button className="LoginBtn">Login</button>
+            <Link style={{ textDecoration: "none" }} to="/EmailVerification">
+              <button className="LoginBtn">Login</button>
+            </Link>
 
             <p className="AccountText">
               Dont have an Account ?{" "}

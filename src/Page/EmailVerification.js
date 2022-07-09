@@ -1,10 +1,15 @@
-import React from 'react'
-
+import React from "react";
+import Verify from "../Components/Verify";
+import Navbar from "../../src/Components/Navbar";
+import Footer from "../../src/Components/Footer";
 export default function EmailVerification() {
   return (
-    <div className='verifyContainer'>
+    <div>
+      <Navbar />
 
-<h1>Verify Your Email Address</h1>
+      <Verify />
+
+      <Footer />
     </div>
-  )
+  );
 }

@@ -3,8 +3,9 @@ import "../Style/navigation.css";
 import { Link } from "react-router-dom";
 
 import { IoMdArrowDropdown } from "react-icons/io";
-import { HiOutlinePlusCircle } from "react-icons/hi";
-import { FaFacebookF } from "react-icons/fa";
+import { HiLockClosed } from "react-icons/hi";
+
+import { FaFacebookF, FaPencilAlt } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaUser } from "react-icons/fa";
 let Logo = require("../Images/logo.png");
@@ -79,13 +80,19 @@ const Navbar = () => {
               <a>Company List</a>
             </Link>
             <a>Company Details</a>
-            <a>Create Account Page</a>
+            <Link style={{ textDecoration: "none" }} to="/CandidateDetails">
             <a>Profile</a>
-            <a>Single Profile</a>
+            </Link>
+         
             <a>404</a>
             <a>FAQ</a>
+            <Link style={{ textDecoration: "none" }} to="/TermsandCondition">
             <a>Terms and Conditions</a>
+            </Link>
+            <Link style={{ textDecoration: "none" }} to="/Privacy">
             <a>Policy Profile</a>
+            </Link>
+         
           </div>
         </div>
         <div class="dropdown">
@@ -109,10 +116,13 @@ const Navbar = () => {
       </div>
       <div className="navbuttons">
         <button className="btn1" onClick={() => setshow(!show)}>
+          <HiLockClosed />
           Login
         </button>
         <Link style={{ textDecoration: "none" }} to="/register">
-          <button className="btn2">Register</button>
+          <button className="btn2">
+            <FaPencilAlt /> Register
+          </button>
         </Link>
       </div>
 
@@ -127,8 +137,18 @@ const Navbar = () => {
           <div className="dropdownLogin">
             <h2>Choose Your Account</h2>
             <div className="btnArea">
-              <button onClick={() => setform(1)}>Job Seeker</button>
-              <button onClick={() => setform(2)}>Employers</button>
+              <button
+                className={form === 1 ? "btnsActive" : "btnNonActive"}
+                onClick={() => setform(1)}
+              >
+                Job Seeker
+              </button>
+              <button
+                className={form === 2 ? "btnsActive" : "btnNonActive"}
+                onClick={() => setform(2)}
+              >
+                Employers
+              </button>
             </div>
             <div className={form === 1 ? "formLogin1" : "nullclass"}>
               <div className="inputArea">
@@ -142,6 +162,7 @@ const Navbar = () => {
                 </div>
                 <span>Forgot Password?</span>
               </div>
+
               <button className="LoginBtn">Login</button>
 
               <p className="AccountText">
@@ -172,6 +193,7 @@ const Navbar = () => {
                 </div>
                 <span>Forgot Password?</span>
               </div>
+
               <button className="LoginBtn">Login</button>
 
               <p className="AccountText">

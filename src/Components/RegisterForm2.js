@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 export default function RegisterForm() {
   return (
     <div className="RegisterForm">
@@ -25,7 +24,7 @@ export default function RegisterForm() {
           </div>
           <div>
             <button>icon</button>
-            <input placeholder="E-mail Address"  />
+            <input placeholder="E-mail Address" />
           </div>
           <div>
             <button>icon</button>
@@ -35,9 +34,16 @@ export default function RegisterForm() {
             <button>icon</button>
             <input placeholder="Verify Password" />
           </div>
-          <button className="CreateAcc">Create an Job Seeker Account</button>
-          <p>Already have an account?
-            <Link to="/login" style={{ textDecoration: "none" }} ><span>Login</span></Link></p>
+          <Link style={{ textDecoration: "none" }} to="/EmailVerification">
+            <button className="CreateAcc">Create an Job Seeker Account</button>
+          </Link>
+
+          <p>
+            Already have an account?
+            <Link to="/login" style={{ textDecoration: "none" }}>
+              <span>Login</span>
+            </Link>
+          </p>
         </div>
       </div>
       <div className="divRight"></div>

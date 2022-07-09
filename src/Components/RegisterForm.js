@@ -35,7 +35,9 @@ export default function RegisterForm() {
             <button>icon</button>
             <input placeholder="Verify Password" />
           </div>
-          <button className="CreateAcc">Create an Employer Account</button>
+          <Link style={{ textDecoration: "none" }} to="/EmailVerification">
+            <button className="CreateAcc">Create an Employeer Account</button>
+          </Link>
           <p>Already have an account?
             <Link to="/login" style={{ textDecoration: "none" }} ><span>Login</span></Link></p>
         </div>

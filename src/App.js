@@ -8,9 +8,12 @@ import Login from "./Page/Login";
 import Signup from "./Page/Signup";
 import Register from "./Page/Register";
 import Contact from "./Page/Contact";
+import TermsAndCondition from "./Page/TermsAndCondition";
 import CompanyList from "./Page/CompanyList";
+import EmailVerification from "./Page/EmailVerification";
 import Blogs from "./Page/Blog/Blogs";
 import About from "./Page/About";
+import Privacy from "./Page/PrivacyPolicy";
 import BlogDetails from "./Page/Blog/BlogDetails";
 import Joblist from "./Page/Jobs/Joblist";
 import FavouriteJob from "./Page/Jobs/FavouriteJob";
@@ -67,6 +70,9 @@ function App() {
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/CandidateDash" element={<CandidateDash />} />
           <Route path="/CompanyList" element={<CompanyList />} />
+          <Route path="/EmailVerification" element={<EmailVerification />} />
+          <Route path="/TermsAndCondition" element={<TermsAndCondition />} />
+          <Route path="/Privacy" element={<Privacy />} />
         </Routes>
       </AnimatePresence>
 
