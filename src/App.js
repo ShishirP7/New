@@ -27,6 +27,9 @@ import CandidateDash from "./Page/Candidate/CandidateDash";
 import { AnimatePresence, motion } from "framer-motion";
 import jobsData from "./Datas/JobsData";
 function App() {
+
+const url=("http://127.0.0.1:8000/api/v1/api-token-auth/")
+
   const [JumpTop, setJumpTop] = useState(false);
   const [data, setdata] = useState();
   useEffect(() => {

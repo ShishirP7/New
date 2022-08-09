@@ -1,0 +1,14 @@
+.nav-Container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
