@@ -4,6 +4,48 @@ import { BiChevronRight } from "react-icons/bi";
 export default function Banner(props) {
   return (
     <>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
       <div className="CreateContainer">
         <div className="titleArea">
           <h1>{props.name}</h1>
